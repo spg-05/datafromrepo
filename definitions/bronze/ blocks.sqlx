@@ -1,0 +1,11 @@
+config {
+  type: "view",
+  schema: "bronze",
+  name: "blocks_vw"
+}
+
+SELECT
+  *
+FROM
+  `analyticsproject-st.taxonomy_demo.blocks`
+LIMIT 10

@@ -1,0 +1,11 @@
+config {
+  type: "view",
+  schema: "bronze",
+  name: "contract_vw"
+}
+
+SELECT
+  *
+FROM
+  `analyticsproject-st.taxonomy_demo.contract`
+LIMIT 10

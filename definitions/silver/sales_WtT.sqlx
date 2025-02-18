@@ -1,0 +1,18 @@
+config {
+  type: "table",
+  schema: "silver",
+  name: "sales_table"
+}
+
+
+-- Your transformation logic
+SELECT
+  store_number,
+  store_name,
+  address,
+  city,
+  zip_code,
+  store_location,
+  county_number,
+  county
+FROM ${ref("sales_vw")}
