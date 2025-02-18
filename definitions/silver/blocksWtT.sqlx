@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  schema: "silver",
+  name: "blocks_table"
+}
+
+
+-- Your transformation logic
+SELECT
+  *
+FROM ${ref("blocks_vw")}

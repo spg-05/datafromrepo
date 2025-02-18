@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  schema: "silver",
+  name: "contract_table"
+}
+
+
+-- Your transformation logic
+SELECT
+  *
+FROM ${ref("contract_vw")}

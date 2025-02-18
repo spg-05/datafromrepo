@@ -1,0 +1,12 @@
+config {
+  type: "view",
+  schema: "bronze",
+  name: "sales_vw"
+}
+
+SELECT
+  *
+FROM
+  `analyticsproject-st.taxonomy_demo.lqr_store_sales`
+LIMIT 10
+
